@@ -20,3 +20,18 @@ go run main.go
 
 [go-config]: https://micro.mu/docs/cn/go-config.html
 [middle-micro-config]: ../../middle-practices/micro-config
+
+
+
+---
+
+# 需要安装的库
+
+```json
+go get -v -u github.com/BurntSushi/toml
+go get -v -u github.com/bitly/go-simplejson
+go get -v -u github.com/fsnotify/fsnotify
+go get -v -u github.com/ghodss/yaml
+go get -v -u github.com/hashicorp/hcl
+go get -v -u github.com/imdario/mergo
+```
