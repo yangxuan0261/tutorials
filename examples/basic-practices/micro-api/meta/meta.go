@@ -4,7 +4,8 @@ import (
 	"context"
 	"log"
 
-	proto "github.com/micro-in-cn/tutorials/examples/basic-practices/micro-api/rpc/proto"
+	proto "micro-tutorials/examples/basic-practices/micro-api/meta/proto"
+
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/api"
 	rapi "github.com/micro/go-micro/api/handler/api"

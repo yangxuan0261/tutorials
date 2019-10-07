@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/micro-in-cn/tutorials/examples/basic-practices/micro-broker/nats/srv/subscriber"
+	"micro-tutorials/examples/basic-practices/micro-broker/nats/srv/subscriber"
+
 	"github.com/micro/go-micro"
 	"github.com/micro/go-micro/util/log"
 )
