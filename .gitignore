@@ -8,3 +8,4 @@ micro-benchmark/micro/nats-transport/client1.go
 micro-benchmark/micro/rabbitmq-transport/client1.go
 micro-benchmark/micro/tcp-transport/client1.go
 micro-benchmark/micro/utp-transport/client1.go
+/vendor
