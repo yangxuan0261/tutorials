@@ -41,7 +41,10 @@ func main() {
 	service := micro.NewService(
 		micro.Name("greeter.client"),
 		// 把客户端包装起来，包装器执行顺序与声明顺序有关
-		micro.WrapClient(logWrap2, logWrap1),
+		micro.WrapClient(logWrap1, logWrap2),
+
+		// micro.WrapClient(logWrap1),
+		// micro.WrapClient(logWrap2),
 	)
 
 	service.Init()
@@ -56,3 +59,20 @@ func main() {
 
 	fmt.Println(rsp.Greeting)
 }
+
+/*
+micro.WrapClient(logWrap1, logWrap2),
+
+[Call1] 客户端请求服务：greeter，方法：Greeter.Hello
+[Call2] 客户端请求服务：greeter，方法：Greeter.Hello
+你好呀！Micro中国
+*/
+
+/*
+micro.WrapClient(logWrap1),
+micro.WrapClient(logWrap2),
+
+[Call2] 客户端请求服务：greeter，方法：Greeter.Hello
+[Call1] 客户端请求服务：greeter，方法：Greeter.Hello
+你好呀！Micro中国
+*/
